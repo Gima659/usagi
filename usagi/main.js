@@ -1,3 +1,5 @@
+const span = document.getElementById('score');
+var msg = "着地した回数:" + 0;
 function share() {
 var url = window.location.href;
 var shareText = `ウサギぴょんぴょんで${point}点を獲得したよ！\nみんなもやってみよう！\n${url}`;
@@ -61,7 +63,9 @@ console.log('着地！！')
 jump = false;
 usagi.y = 500;
 point += 1;
-console.log(point)
+console.log(point);
+msg = "着地した回数:" + point;
+span.innerText(msg);
 save();
 }
 }
