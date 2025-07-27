@@ -65,7 +65,7 @@ usagi.y = 500;
 point += 1;
 console.log(point);
 msg = "着地した回数:" + point;
-span.innerText(msg);
+span.innerText = msg;
 save();
 }
 }
